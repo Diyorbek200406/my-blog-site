@@ -49,6 +49,7 @@ export const footerIcons = [
     href: "https://www.youtube.com/",
   },
 ];
+
 export const mySkills = [
   {
     title: "Frontend",
@@ -71,7 +72,7 @@ export const mySkills = [
       },
       {
         title: "React JS",
-        href: "https://shorturl.at/rsu67",
+        href: "https://t.ly/UNkUv",
       },
       {
         title: "Next JS",
@@ -87,15 +88,11 @@ export const mySkills = [
       },
       {
         title: "Chakra UI",
-        href: "https://shorturl.at/uDEOW",
+        href: "https://t.ly/itabj",
       },
       {
         title: "Material UI",
         href: "https://shorturl.at/cnCF6",
-      },
-      {
-        title: "Zustand",
-        href: "https://shorturl.at/acjUX",
       },
       {
         title: "Sass",
@@ -112,51 +109,51 @@ export const mySkills = [
     skills: [
       {
         title: "Node JS",
-        href: "https://shorturl.at/io138",
+        href: "https://t.ly/A_WKe",
       },
       {
         title: "Nest JS",
-        href: "https://t.ly/MOfHN",
+        href: "https://t.ly/3NAjG",
       },
       {
         title: "Express JS",
-        href: "https://t.ly/-PTJ3",
+        href: "https://t.ly/CulE8",
       },
       {
         title: "Ejs",
-        href: "https://t.ly/zDPrE",
+        href: "https://t.ly/xWjZo",
       },
       {
         title: "Socket IO",
         href: "https://t.ly/6NxfS",
       },
       {
-        title: "",
-        href: "https://shorturl.at/irsF7",
+        title: "Docker",
+        href: "https://t.ly/FfFOs",
       },
       {
-        title: "Tailwind UI",
-        href: "https://shorturl.at/owIN0",
+        title: "Min IO",
+        href: "https://t.ly/qP-ln",
       },
       {
-        title: "Chakra UI",
-        href: "https://shorturl.at/uDEOW",
+        title: "Graphql",
+        href: "https://t.ly/pw42n",
       },
       {
-        title: "Material UI",
-        href: "https://shorturl.at/cnCF6",
+        title: "TypeScript",
+        href: "https://t.ly/jcbzt",
       },
       {
-        title: "Zustand",
-        href: "https://shorturl.at/acjUX",
+        title: "Swagger",
+        href: "https://t.ly/-_0rP",
       },
       {
-        title: "Sass",
-        href: "https://shorturl.at/dfyO0",
+        title: "Postman",
+        href: "https://t.ly/jcGG3",
       },
       {
-        title: "Shadcn",
-        href: "https://shorturl.at/dsuIZ",
+        title: "JsonWebToken",
+        href: "https://t.ly/N7fwm",
       },
     ],
   },
@@ -165,23 +162,15 @@ export const mySkills = [
     skills: [
       {
         title: "Postgresql",
-        href: "https://shorturl.at/io138",
+        href: "https://t.ly/qxiLO",
       },
       {
         title: "Mongo DB",
-        href: "https://shorturl.at/bdyJR",
+        href: "https://t.ly/tiBNm",
       },
       {
         title: "Msql",
-        href: "https://shorturl.at/etMUX",
-      },
-      {
-        title: "React JS",
-        href: "https://shorturl.at/rsu67",
-      },
-      {
-        title: "Next JS",
-        href: "https://shorturl.at/nrGY1",
+        href: "https://t.ly/1eTo8",
       },
     ],
   },

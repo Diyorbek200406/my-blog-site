@@ -14,7 +14,7 @@ const Header = () => {
     <div className="w-full fixed top-0 left-0 right-0 flex items-center justify-between px-10 py-5 bg-background z-50">
       <Link href="/" className="flex items-center gap-2">
         <AlignLeftIcon />
-        D/&gt;
+        Diyorbek
       </Link>
 
       <nav className="flex items-center gap-x-8">

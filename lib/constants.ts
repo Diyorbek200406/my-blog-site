@@ -180,12 +180,12 @@ export const myProjects = [
   {
     name: "Countries",
     route: "https://diyorbek-countries.vercel.app/",
-    image: "https://t.ly/V-Igm",
+    image: "https://i.ibb.co/stSGg76/Screenshot-2023-12-09-at-19-37-07.png",
   },
   {
     name: "StartUp",
     route: "https://diyorbek-startup.vercel.app/",
-    image: "https://t.ly/0i_jc",
+    image: "https://i.ibb.co/fQVJYVC/Screenshot-2023-12-09-at-19-34-38.png",
   },
   {
     name: "Movie",

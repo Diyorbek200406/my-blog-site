@@ -25,7 +25,7 @@ const Projects = () => {
       <main className="grid grid-cols-3 gap-8">
         {myProjects.map((project) => (
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-full h-48" src={project.image} alt="Sunset in the mountains" />
+            <img className="w-full h-56" src={project.image} alt="Sunset in the mountains" />
 
             <div className="p-4">
               <h2 className="font-bold text-xl">{project.name}</h2>

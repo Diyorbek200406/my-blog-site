@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { myProjects } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Projects = () => {
@@ -25,7 +26,7 @@ const Projects = () => {
       <main className="grid grid-cols-3 gap-8">
         {myProjects.map((project, idx) => (
           <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-full h-56" src={project.image} alt="Sunset in the mountains" />
+            <Image priority className="w-full h-56" src={project.image} alt="Sunset in the mountains" width={100} height={100} />
 
             <div className="p-4">
               <h2 className="font-bold text-xl">{project.name}</h2>

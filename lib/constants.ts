@@ -175,3 +175,22 @@ export const mySkills = [
     ],
   },
 ];
+
+export const myProjects = [
+  {
+    name: "Countries",
+    route: "https://diyorbek-countries.vercel.app/",
+  },
+  {
+    name: "StartUp",
+    route: "https://diyorbek-startup.vercel.app/",
+  },
+  {
+    name: "Countries",
+    route: "https://diyorbek-countries.vercel.app/",
+  },
+  {
+    name: "StartUp",
+    route: "https://diyorbek-startup.vercel.app/",
+  },
+];

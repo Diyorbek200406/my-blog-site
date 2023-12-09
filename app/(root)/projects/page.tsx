@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { myProjects } from "@/lib/constants";
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const Projects = () => {
@@ -21,11 +22,25 @@ const Projects = () => {
         </Link>
       </motion.div>
 
-      {myProjects.map((project) => (
-        <div>
-          <Link href={project.route}>{project.name}</Link>
-        </div>
-      ))}
+      <main className="grid grid-cols-3 gap-8">
+        {myProjects.map((project) => (
+          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img className="w-full h-48" src={project.image} alt="Sunset in the mountains" />
+
+            <div className="p-4">
+              <h2 className="font-bold text-xl">{project.name}</h2>
+              <p className="text-slate-500 py-4">Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+
+              <Link href={project.route} target="_blank">
+                <Button className="flex items-center justify-center gap-4">
+                  <p className="text-lg">Link</p>
+                  <ExternalLink />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </main>
     </div>
   );
 };

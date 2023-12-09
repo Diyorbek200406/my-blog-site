@@ -23,8 +23,8 @@ const Projects = () => {
       </motion.div>
 
       <main className="grid grid-cols-3 gap-8">
-        {myProjects.map((project) => (
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        {myProjects.map((project, idx) => (
+          <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg">
             <img className="w-full h-56" src={project.image} alt="Sunset in the mountains" />
 
             <div className="p-4">

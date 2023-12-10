@@ -16,13 +16,13 @@ const Home = () => {
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}>
         <h1>
-          <ReactTypingEffect text={["Erkinov Diyorbek"]} />
+          <ReactTypingEffect cursor=" " text={["Erkinov Diyorbek"]} />
         </h1>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}>
         <p>
-          <ReactTypingEffect text={["I'm a Frontend Developer", "I'm a Backend Developer", "I'm a Full Stack Developer"]} />
+          <ReactTypingEffect cursor=" " text={["I'm a Frontend Developer", "I'm a Backend Developer", "I'm a Full Stack Developer"]} />
         </p>
       </motion.div>
 

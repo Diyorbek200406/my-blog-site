@@ -1,4 +1,4 @@
-import { Youtube, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Youtube, Instagram, Linkedin, Facebook, Github } from "lucide-react";
 
 export const navigation = [
   {
@@ -47,6 +47,11 @@ export const footerIcons = [
     title: "youtube",
     icon: Youtube,
     href: "https://www.youtube.com/",
+  },
+  {
+    title: "github",
+    icon: Github,
+    href: "https://github.com/Diyorbek200406",
   },
 ];
 

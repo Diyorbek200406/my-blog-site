@@ -12,7 +12,9 @@ const About = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}>
-        <h1>Diyorbek Erkinov</h1>
+        <h1>
+          <ReactTypingEffect text={["Erkinov Diyorbek"]} />
+        </h1>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, ease: "easeInOut" }}>
@@ -23,7 +25,9 @@ const About = () => {
         <p color={"gray.500"}>
           First Name : <ReactTypingEffect text={["Diyorbek"]} />
         </p>
-        <p color={"gray.500"}>Last Name : Erkinov</p>
+        <p color={"gray.500"}>
+          Last Name : <ReactTypingEffect text={["Erkinov"]} />
+        </p>
         <p color={"gray.500"}>
           Date Of Birth : <CountUp delay={2} end={2004} />
         </p>

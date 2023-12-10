@@ -15,7 +15,7 @@ const Skills = () => {
         exit={{ opacity: 0, x: 500 }}
         transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
       >
-        <h1>Diyorbek Erkinov</h1>
+        <h1 className="text-xl md:text-6xl font-bold">Diyorbek Erkinov</h1>
       </motion.div>
 
       <motion.div
@@ -42,10 +42,20 @@ const Skills = () => {
         <div key={idx} className="w-3/5">
           <h2 className="text-3xl my-8 font-bold">{skill.title}</h2>
 
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-between gap-4">
             {skill.skills.map((item, idx) => (
-              <div key={idx} className="cursor-pointer flex flex-col items-center justify-between gap-4">
-                <Image priority src={item.href} alt="Skill" className="rounded-lg object-fill w-20 h-20 bg-transparent" width={80} height={80} />
+              <div
+                key={idx}
+                className="bg-slate-300 w-full sm:w-max hover:bg-slate-500 dark:bg-slate-800 px-8 py-4 dark:hover:bg-slate-900 rounded-lg cursor-pointer flex flex-col items-center justify-between gap-4"
+              >
+                <Image
+                  priority
+                  src={item.href}
+                  alt="Skill"
+                  className="rounded-lg object-fill bg-transparent"
+                  width={100}
+                  height={100}
+                />
                 <p>{item.title}</p>
               </div>
             ))}

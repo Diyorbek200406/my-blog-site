@@ -56,12 +56,21 @@ const Projects = () => {
                 Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </p>
 
-              <Link href={project.route} target="_blank">
-                <Button className="flex items-center justify-center gap-4">
-                  <p className="text-lg">Link</p>
-                  <ExternalLink />
-                </Button>
-              </Link>
+              <div className="flex items-center justify-between gap-8">
+                <Link href={project.route} target="_blank">
+                  <Button className="flex items-center justify-center gap-4">
+                    <p className="text-lg">Link</p>
+                    <ExternalLink />
+                  </Button>
+                </Link>
+
+                <Link href={project.github} target="_blank">
+                  <Button className="flex items-center justify-center gap-4">
+                    <p className="text-lg">Code</p>
+                    <ExternalLink />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

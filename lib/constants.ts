@@ -76,11 +76,11 @@ export const mySkills = [
         href: "https://t.ly/jcbzt",
       },
       {
-        title: "React JS",
+        title: "React",
         href: "https://t.ly/UNkUv",
       },
       {
-        title: "Next JS",
+        title: "Next",
         href: "https://shorturl.at/nrGY1",
       },
       {
@@ -88,15 +88,15 @@ export const mySkills = [
         href: "https://shorturl.at/irsF7",
       },
       {
-        title: "Tailwind UI",
+        title: "Tailwind",
         href: "https://shorturl.at/owIN0",
       },
       {
-        title: "Chakra UI",
+        title: "Chakra",
         href: "https://t.ly/itabj",
       },
       {
-        title: "Material UI",
+        title: "MUI",
         href: "https://shorturl.at/cnCF6",
       },
       {
@@ -113,15 +113,15 @@ export const mySkills = [
     title: "Backend",
     skills: [
       {
-        title: "Node JS",
+        title: "Node",
         href: "https://t.ly/A_WKe",
       },
       {
-        title: "Nest JS",
+        title: "Nest",
         href: "https://t.ly/3NAjG",
       },
       {
-        title: "Express JS",
+        title: "Express",
         href: "https://t.ly/CulE8",
       },
       {
@@ -157,7 +157,7 @@ export const mySkills = [
         href: "https://t.ly/jcGG3",
       },
       {
-        title: "JsonWebToken",
+        title: "JWT",
         href: "https://t.ly/N7fwm",
       },
     ],
@@ -174,6 +174,10 @@ export const mySkills = [
         href: "https://t.ly/tiBNm",
       },
       {
+        title: "Redis",
+        href: "https://t.ly/Zc5ti",
+      },
+      {
         title: "Msql",
         href: "https://t.ly/1eTo8",
       },
@@ -186,20 +190,24 @@ export const myProjects = [
     name: "Countries",
     route: "https://diyorbek-countries.vercel.app/",
     image: "https://i.ibb.co/stSGg76/Screenshot-2023-12-09-at-19-37-07.png",
+    github: "https://github.com/Diyorbek200406/2023-04-08-Countries-webpack-js",
   },
   {
     name: "StartUp",
     route: "https://diyorbek-startup.vercel.app/",
     image: "https://i.ibb.co/fQVJYVC/Screenshot-2023-12-09-at-19-34-38.png",
+    github: "https://github.com/Diyorbek200406/startup",
   },
   {
     name: "Movie",
     route: "https://diyor-movie.vercel.app/",
     image: "https://t.ly/JBxcG",
+    github: "https://github.com/Diyorbek200406/diyor-movie-app",
   },
   {
     name: "Netflix",
     route: "https://diyorbek-netflix.vercel.app/browse",
     image: "https://t.ly/4AqnJ",
+    github: "https://github.com/Diyorbek200406/netflix",
   },
 ];

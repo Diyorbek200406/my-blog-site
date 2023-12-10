@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { TypeAnimation } from "react-type-animation";
 import MyImage from "@/public/2023-12-06 22.31.19.jpg";
+import ReactTypingEffect from "react-typing-effect";
 
 const Home = () => {
   return (
@@ -15,17 +15,19 @@ const Home = () => {
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}>
-        <h1>Diyorbek Erkinov</h1>
+        <h1>
+          <ReactTypingEffect text={["Diyorbek Erkinov"]} />
+        </h1>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}>
         <p>
-          I'm a <TypeAnimation sequence={["D", 2000, "De", 2000, "Dev", 2000]} repeat={Infinity} />
+          I'm a <ReactTypingEffect text={["Full Stack Developer"]} />
         </p>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}>
-        <p color={"gray.500"}>If you want to know more about me, click the button</p>
+        <p color={"gray.500"}>If You Want To Know More About Me, Click The Button</p>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}>

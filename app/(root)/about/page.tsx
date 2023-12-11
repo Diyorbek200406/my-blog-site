@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import MyImage from "@/public/2023-12-06 22.31.19.jpg";
+import MyImage from "@/public/Diyorbek.jpg";
 import Link from "next/link";
 import CountUp from "react-countup";
 import ReactTypingEffect from "react-typing-effect";

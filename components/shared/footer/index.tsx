@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
   return (
-    <div className="w-full bg-background flex flex-col md:flex-row justify-between items-center p-8 gap-4">
+    <div className="w-[1440px] mx-auto bg-background flex flex-col md:flex-row justify-between items-center p-8 gap-4">
       <p className="flex flex-wrap text-center">© {format(new Date(), "yyyy")} Erkinov Diyorbek. All Right Reserved.</p>
 
       <div className="flex items-center gap-x-4">

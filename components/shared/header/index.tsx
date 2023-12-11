@@ -50,7 +50,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full h-[10vh] fixed top-0 flex items-center justify-between px-10 py-5 bg-background z-[9]">
+      <div className="w-[1440px] mx-auto h-[10vh] fixed top-0 left-0 right-0 flex items-center justify-between px-10 py-5 bg-background z-[9]">
         {logo()}
         <div className="flex items-center gap-8">
           {renderNavLinks()}

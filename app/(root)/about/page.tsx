@@ -18,7 +18,7 @@ const About = () => {
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, ease: "easeInOut" }}>
-        <Image className="rounded rounded-t-xl object-cover" src={MyImage} width={250} alt="Image" />
+        <Image priority className="rounded rounded-t-xl object-cover" src={MyImage} width={250} alt="Image" />
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}>

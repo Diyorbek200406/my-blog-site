@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, ease: "easeInOut" }}>
-        <Image className="rounded rounded-t-xl object-cover" src={MyImage} width={250} alt="Image" />
+        <Image priority className="rounded rounded-t-xl object-cover" src={MyImage} width={250} alt="Image" />
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}>
@@ -21,9 +21,9 @@ const Home = () => {
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}>
-        <p>
+        <div>
           <ReactTypingEffect cursor=" " text={["I'm a Frontend Developer", "I'm a Backend Developer", "I'm a Full Stack Developer"]} />
-        </p>
+        </div>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}>

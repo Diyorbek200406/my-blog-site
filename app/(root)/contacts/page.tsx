@@ -6,9 +6,16 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { PhoneInput } from "react-international-phone";
+import { toast } from "react-toastify";
 
 const Contacts = () => {
   const [phone, setPhone] = useState("");
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const { firstname, lastname, email, phone, gender }: any = e.target;
+    toast("Thanks For The Message");
+  };
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
@@ -20,24 +27,54 @@ const Contacts = () => {
         <p color={"gray.500"}>If you want to know more about me, click the button</p>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}>
+      <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}>
         <Link href={"/"}>
           <Button>Home Page</Button>
         </Link>
       </motion.div>
 
-      <form className="flex gap-12">
-        <div className="flex-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet accusamus praesentium distinctio eligendi tempore quasi pariatur, quas dolor ipsa neque aspernatur harum commodi
-          excepturi aut possimus doloribus quia itaque delectus quos tenetur sunt veniam consectetur. Esse voluptatem sint id molestias modi soluta quibusdam. Temporibus inventore porro non tempora
-          laudantium.
+      <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.7, ease: "easeInOut" }}>
+        <h1 className="text-4xl my-2 font-bold text-center">Contact Us</h1>
+        <p className="text-xl my-2 font-semibold text-center">Any question or remark ? Just write us a message.</p>
+      </motion.div>
+
+      <form onSubmit={onSubmit} className="flex flex-col lg:flex-row gap-12">
+        <div className="flex-1 p-4 bg-gray-300 dark:bg-slate-600 rounded">
+          <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.9, ease: "easeInOut" }}>
+            We will contact you for sure, fill out the form and send it to us
+          </motion.div>
         </div>
 
-        <div className="flex-1">
-          <Input type="text" placeholder="Your Name" />
-          <PhoneInput defaultCountry="uz" value={phone} onChange={(phone) => setPhone(phone)} />
-          <Input type="email" placeholder="Your Email" />
-          <button>Send</button>
+        <div className="flex-1 flex flex-col gap-4 p-4 bg-slate-300 dark:bg-slate-600 rounded">
+          <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 1.1, ease: "easeInOut" }}>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <Input name="firstname" className="w-full" type="text" placeholder="FirstName" required />
+              <Input name="lastname" className="w-full" type="text" placeholder="LastName" />
+            </div>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 1.3, ease: "easeInOut" }}>
+            <Input name="email" className="w-full" type="email" placeholder="Email" required />
+          </motion.div>
+
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-evenly">
+            <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 1.5, ease: "easeInOut" }}>
+              <PhoneInput name="phone" disableDialCodePrefill placeholder="+998 99 999 99 99" defaultCountry="uz" value={phone} onChange={(phone) => setPhone(phone)} required />
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 1.7, ease: "easeInOut" }}>
+              <div className="flex gap-4 items-center">
+                <Input type="radio" name="gender" value="male" defaultChecked /> Male
+                <Input type="radio" name="gender" value="female" /> Female
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 1.9, ease: "easeInOut" }}>
+            <Button variant={"outline"} className="w-full" type="submit">
+              Send
+            </Button>
+          </motion.div>
         </div>
       </form>
     </div>

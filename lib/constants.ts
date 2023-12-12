@@ -1,3 +1,36 @@
+import {
+  bootstrap,
+  chakra,
+  country,
+  css,
+  docker,
+  ejs,
+  express,
+  graphql,
+  html,
+  javascript,
+  jwt,
+  minio,
+  mongodb,
+  movie,
+  mui,
+  mysql,
+  nest,
+  netflix,
+  next,
+  node,
+  postgres,
+  postman,
+  react,
+  redis,
+  sass,
+  shadcn,
+  socket,
+  startup,
+  swagger,
+  tailwind,
+  typescript,
+} from "@/public/logo";
 import { Youtube, Instagram, Linkedin, Facebook, Github } from "lucide-react";
 
 export const navigation = [
@@ -61,51 +94,51 @@ export const mySkills = [
     skills: [
       {
         title: "Html",
-        href: "https://shorturl.at/hkuUX",
+        href: html,
       },
       {
         title: "Css",
-        href: "https://shorturl.at/vxEO1",
+        href: css,
       },
       {
         title: "JavaScript",
-        href: "https://shorturl.at/etMUX",
+        href: javascript,
       },
       {
         title: "TypeScript",
-        href: "https://t.ly/jcbzt",
+        href: typescript,
       },
       {
         title: "React",
-        href: "https://t.ly/UNkUv",
+        href: react,
       },
       {
         title: "Next",
-        href: "https://shorturl.at/nrGY1",
+        href: next,
       },
       {
         title: "Bootstrap",
-        href: "https://shorturl.at/irsF7",
+        href: bootstrap,
       },
       {
         title: "Tailwind",
-        href: "https://shorturl.at/owIN0",
+        href: tailwind,
       },
       {
         title: "Chakra",
-        href: "https://t.ly/itabj",
+        href: chakra,
       },
       {
         title: "MUI",
-        href: "https://shorturl.at/cnCF6",
+        href: mui,
       },
       {
         title: "Sass",
-        href: "https://shorturl.at/dfyO0",
+        href: sass,
       },
       {
         title: "Shadcn",
-        href: "https://shorturl.at/dsuIZ",
+        href: shadcn,
       },
     ],
   },
@@ -114,51 +147,51 @@ export const mySkills = [
     skills: [
       {
         title: "Node",
-        href: "https://t.ly/A_WKe",
+        href: node,
       },
       {
         title: "Nest",
-        href: "https://t.ly/3NAjG",
+        href: nest,
       },
       {
         title: "Express",
-        href: "https://t.ly/CulE8",
+        href: express,
       },
       {
         title: "Ejs",
-        href: "https://t.ly/xWjZo",
+        href: ejs,
       },
       {
         title: "Socket IO",
-        href: "https://t.ly/6NxfS",
+        href: socket,
       },
       {
         title: "Docker",
-        href: "https://t.ly/FfFOs",
+        href: docker,
       },
       {
         title: "Min IO",
-        href: "https://t.ly/qP-ln",
+        href: minio,
       },
       {
         title: "Graphql",
-        href: "https://t.ly/pw42n",
+        href: graphql,
       },
       {
         title: "TypeScript",
-        href: "https://t.ly/jcbzt",
+        href: typescript,
       },
       {
         title: "Swagger",
-        href: "https://t.ly/-_0rP",
+        href: swagger,
       },
       {
         title: "Postman",
-        href: "https://t.ly/jcGG3",
+        href: postman,
       },
       {
         title: "JWT",
-        href: "https://t.ly/N7fwm",
+        href: jwt,
       },
     ],
   },
@@ -167,19 +200,19 @@ export const mySkills = [
     skills: [
       {
         title: "Postgresql",
-        href: "https://t.ly/qxiLO",
+        href: postgres,
       },
       {
         title: "Mongo DB",
-        href: "https://t.ly/tiBNm",
+        href: mongodb,
       },
       {
         title: "Redis",
-        href: "https://t.ly/Zc5ti",
+        href: redis,
       },
       {
         title: "Msql",
-        href: "https://t.ly/1eTo8",
+        href: mysql,
       },
     ],
   },
@@ -189,25 +222,25 @@ export const myProjects = [
   {
     name: "Countries",
     route: "https://diyorbek-countries.vercel.app/",
-    image: "https://i.ibb.co/stSGg76/Screenshot-2023-12-09-at-19-37-07.png",
+    image: country,
     github: "https://github.com/Diyorbek200406/2023-04-08-Countries-webpack-js",
   },
   {
     name: "StartUp",
     route: "https://diyorbek-startup.vercel.app/",
-    image: "https://i.ibb.co/fQVJYVC/Screenshot-2023-12-09-at-19-34-38.png",
+    image: startup,
     github: "https://github.com/Diyorbek200406/startup",
   },
   {
     name: "Movie",
     route: "https://diyor-movie.vercel.app/",
-    image: "https://t.ly/JBxcG",
+    image: movie,
     github: "https://github.com/Diyorbek200406/diyor-movie-app",
   },
   {
     name: "Netflix",
     route: "https://diyorbek-netflix.vercel.app/browse",
-    image: "https://t.ly/4AqnJ",
+    image: netflix,
     github: "https://github.com/Diyorbek200406/netflix",
   },
 ];

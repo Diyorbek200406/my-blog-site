@@ -38,15 +38,26 @@ const Skills = () => {
         <h1 className="text-5xl font-bold text-center">My Skills</h1>
       </motion.div>
 
-      {mySkills.map((skill, idx) => (
-        <div key={idx} className="w-3/5">
-          <h2 className="text-3xl my-8 font-bold">{skill.title}</h2>
+      {mySkills.map((skill, index) => (
+        <div key={index} className="w-3/5">
+          <motion.div
+            initial={{ scale: 0, opacity: 0, x: -500 }}
+            animate={{ scale: 1, opacity: 1, x: 0 }}
+            exit={{ scale: 0, opacity: 0, x: 500 }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+          >
+            <h2 className="text-3xl my-8 font-bold">{skill.title}</h2>
+          </motion.div>
 
           <div className="flex flex-wrap justify-between gap-4">
             {skill.skills.map((item, idx) => (
-              <div
+              <motion.div
+                initial={{ scale: 0, opacity: 0, x: -500 }}
+                animate={{ scale: 1, opacity: 1, x: 0 }}
+                exit={{ scale: 0, opacity: 0, x: 500 }}
+                transition={{ duration: 1, delay: 0.3 * idx + index, ease: "easeInOut" }}
                 key={idx}
-                className="bg-slate-300 w-full sm:w-max hover:bg-slate-500 dark:bg-slate-800 px-8 py-4 dark:hover:bg-slate-900 rounded-lg cursor-pointer flex flex-col items-center justify-between gap-4"
+                className="bg-slate-300 w-full sm:w-max hover:bg-slate-500 dark:bg-slate-800 dark:hover:bg-slate-900 px-8 py-4 rounded-lg cursor-pointer flex flex-col items-center justify-between gap-4"
               >
                 <Image
                   priority
@@ -57,7 +68,7 @@ const Skills = () => {
                   height={100}
                 />
                 <p>{item.title}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -71,6 +71,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-transparent;
+    @apply bg-background text-foreground !scrollbar-none !scrollbar-track-transparent !scrollbar-thumb-transparent;
   }
 }

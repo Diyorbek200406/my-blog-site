@@ -15,15 +15,15 @@ const ProjectDetail = () => {
     <div>
       <h1 className="text-5xl font-bold py-8 text-center">{project?.name}</h1>
 
-      <div className="px-8">
+      <div className="text-end px-8">
         <Link href={"/projects"}>
-          <Button>Back</Button>
+          <Button className="px-8">Back</Button>
         </Link>
       </div>
 
       <div className="flex flex-col md:flex-row items-center gap-8 p-8">
         <div className="flex-1 flex items-center justify-center">
-          <Image className="rounded-xl" src={project?.image} alt={"project"} width={400} height={400} />
+          <Image className="rounded-xl border p-4" src={project?.image} alt={"project"} width={400} height={400} />
         </div>
 
         <div className="flex-1">
@@ -37,7 +37,7 @@ const ProjectDetail = () => {
           <div className="flex flex-wrap items-center justify-start gap-2">
             <h2>Technologies used in the project:</h2>
             {project?.technologies?.map((item, index) => (
-              <Button variant={"ghost"} key={index} className="text-slate-600 pt-1">
+              <Button variant={"outline"} key={index} className="text-slate-600">
                 {item}
               </Button>
             ))}

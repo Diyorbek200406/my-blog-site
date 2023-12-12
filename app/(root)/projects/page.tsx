@@ -14,65 +14,55 @@ const Projects = () => {
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 500 }}
-        transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
-      >
-        <h1>Diyorbek Erkinov</h1>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
       >
-        <p color={"gray.500"}>If you want to know more about me, click the button</p>
+        <h1 className="text-5xl font-bold py-4">Projects</h1>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
-        transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}
-      >
-        <Link href={"/skills"}>
-          <Button>More Skills</Button>
-        </Link>
-      </motion.div>
-
-      <main className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8">
+      <main className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8 p-4">
         {myProjects.map((project, idx) => (
-          <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg">
-            <Image
-              priority
-              className="w-full h-56"
-              src={project.image}
-              alt="Sunset in the mountains"
-              width={100}
-              height={100}
-            />
+          <motion.div
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 500 }}
+            transition={{ duration: 1, delay: 0.5 * (idx + 1), ease: "easeInOut" }}
+            key={idx}
+            className="max-w-sm rounded overflow-hidden shadow-lg"
+          >
+            <Link href={`projects/${project.name.toLowerCase()}`}>
+              <Image
+                priority
+                className="w-full h-56"
+                src={project.image}
+                alt="Sunset in the mountains"
+                width={100}
+                height={100}
+              />
 
-            <div className="p-4">
-              <h2 className="font-bold text-xl">{project.name}</h2>
-              <p className="text-slate-500 py-4">
-                Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
+              <div className="p-4">
+                <h2 className="font-bold text-xl">{project.name}</h2>
+                <p className="text-slate-500 py-4">
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
 
-              <div className="flex items-center justify-between gap-8">
-                <Link href={project.route} target="_blank">
-                  <Button className="flex items-center justify-center gap-4">
-                    <p className="text-lg">Link</p>
-                    <ExternalLink />
-                  </Button>
-                </Link>
+                <div className="flex items-center justify-between gap-4">
+                  <Link href={project.route} target="_blank" className="w-full">
+                    <Button variant={"outline"} className="flex w-full items-center justify-center gap-4">
+                      <p className="text-lg">Link</p>
+                      <ExternalLink />
+                    </Button>
+                  </Link>
 
-                <Link href={project.github} target="_blank">
-                  <Button className="flex items-center justify-center gap-4">
-                    <p className="text-lg">Code</p>
-                    <ExternalLink />
-                  </Button>
-                </Link>
+                  <Link href={project.github} target="_blank" className="w-full">
+                    <Button className="flex w-full items-center justify-center gap-4">
+                      <p className="text-lg">Code</p>
+                      <ExternalLink />
+                    </Button>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </div>
+            </Link>
+          </motion.div>
         ))}
       </main>
     </div>

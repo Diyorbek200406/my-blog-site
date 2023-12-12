@@ -1,10 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { mySkills } from "@/lib/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 const Skills = () => {
   return (
@@ -13,29 +11,9 @@ const Skills = () => {
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 500 }}
-        transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
-      >
-        <h1 className="text-xl md:text-6xl font-bold">Diyorbek Erkinov</h1>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
       >
-        <Link href={"/blogs"}>
-          <Button>More Blogs</Button>
-        </Link>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
-        transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-      >
-        <h1 className="text-5xl font-bold text-center">My Skills</h1>
+        <h1 className="text-5xl font-bold">Skills</h1>
       </motion.div>
 
       {mySkills.map((skill, index) => (

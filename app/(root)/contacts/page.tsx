@@ -24,29 +24,9 @@ const Contacts = () => {
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 500 }}
-        transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
-      >
-        <h1>Diyorbek Erkinov</h1>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
       >
-        <p color={"gray.500"}>If you want to know more about me, click the button</p>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
-        transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-      >
-        <Link href={"/"}>
-          <Button>Home Page</Button>
-        </Link>
+        <h1 className="text-5xl font-bold">Contacts</h1>
       </motion.div>
 
       <motion.div
@@ -55,7 +35,6 @@ const Contacts = () => {
         exit={{ opacity: 0, x: 500 }}
         transition={{ duration: 1, delay: 0.7, ease: "easeInOut" }}
       >
-        <h1 className="text-4xl my-2 font-bold text-center">Contact Us</h1>
         <p className="text-xl my-2 font-semibold text-center">Any question or remark ? Just write us a message.</p>
       </motion.div>
 
@@ -95,9 +74,7 @@ const Contacts = () => {
             className="flex items-center gap-4 p-2"
           >
             <Phone />
-            <a href="tel:+998770442004">
-              <p>+998 77 044 20 04</p>
-            </a>
+            <Link href="tel:+998770442004">+998 77 044 20 04</Link>
           </motion.div>
 
           <motion.div

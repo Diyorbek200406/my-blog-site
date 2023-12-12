@@ -22,16 +22,16 @@ const ProjectDetail = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center gap-8 p-8">
-        <div className="flex-1">
+        <div className="flex-1 flex items-center justify-center">
           <Image className="rounded-xl" src={project?.image} alt={"project"} width={400} height={400} />
         </div>
 
         <div className="flex-1">
           <h2>
-            Project Name : <span className="text-slate-600">{project?.name}</span>
+            Project Name : <span className="text-slate-400">{project?.name}</span>
           </h2>
           <p className="py-4">
-            Description : <span className="text-slate-600">{project?.description}</span>
+            Description : <span className="text-slate-400">{project?.description}</span>
           </p>
 
           <div className="flex flex-wrap items-center justify-start gap-2">
@@ -43,11 +43,19 @@ const ProjectDetail = () => {
             ))}
           </div>
 
-          <Link href={project?.github as string}>
-            <Button variant={"outline"} className="text-slate-200">
-              Github
-            </Button>
-          </Link>
+          <div className="flex items-center gap-8 w-full">
+            <Link className="w-full" href={project?.route as string} target="_blank">
+              <Button variant={"outline"} className="text-blue-400 w-full outline-dotted my-4">
+                Live Demo
+              </Button>
+            </Link>
+
+            <Link className="w-full" href={project?.github as string} target="_blank">
+              <Button variant={"outline"} className="text-green-400 w-full outline-dotted my-4">
+                Github Code
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

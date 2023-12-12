@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
+import { MailIcon, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { PhoneInput } from "react-international-phone";
@@ -72,15 +73,42 @@ const Contacts = () => {
             exit={{ opacity: 0, x: 500 }}
             transition={{ duration: 1, delay: 0.9, ease: "easeInOut" }}
           >
-            <h3 className="text-xl font-semibold">We will contact you for sure, fill out the form and send </h3>
+            <h3 className="text-xl font-semibold p-2">We will contact You for sure, Fill out the Form and Send </h3>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, x: -500 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 500 }}
             transition={{ duration: 1, delay: 1.1, ease: "easeInOut" }}
+            className="flex items-center gap-4 p-2"
           >
-            <p className="font-semibold text-sm">We will contact you for sure, fill out the form </p>
+            <MailIcon />
+            <p className="font-bold text-sm">erkinovdiyorbek39@gmail.com</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 500 }}
+            transition={{ duration: 1, delay: 1.3, ease: "easeInOut" }}
+            className="flex items-center gap-4 p-2"
+          >
+            <Phone />
+            <a href="tel:+998770442004">
+              <p>+998 77 044 20 04</p>
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 500 }}
+            transition={{ duration: 1, delay: 1.5, ease: "easeInOut" }}
+            className="flex items-center gap-4 p-2"
+          >
+            <MapPin />
+            <p>Tashkent, Yangiyul</p>
           </motion.div>
         </motion.div>
 

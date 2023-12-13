@@ -32,37 +32,6 @@ import netflix from "./netflix.svg";
 import movie from "./movie.svg";
 import country from "./country.svg";
 import startup from "./startup.svg";
+import blog from "./blog.svg";
 
-export {
-  html,
-  css,
-  javascript,
-  react,
-  typescript,
-  next,
-  bootstrap,
-  tailwind,
-  chakra,
-  mui,
-  sass,
-  shadcn,
-  node,
-  nest,
-  express,
-  ejs,
-  docker,
-  graphql,
-  swagger,
-  postman,
-  jwt,
-  postgres,
-  mysql,
-  mongodb,
-  redis,
-  socket,
-  minio,
-  netflix,
-  movie,
-  country,
-  startup,
-};
+export { html, css, javascript, react, typescript, next, bootstrap, tailwind, chakra, mui, sass, shadcn, node, nest, express, ejs, docker, graphql, swagger, postman, jwt, postgres, mysql, mongodb, redis, socket, minio, netflix, movie, country, startup, blog };

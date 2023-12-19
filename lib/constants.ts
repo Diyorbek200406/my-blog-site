@@ -56,133 +56,124 @@ export const footerIcons = [
   },
 ];
 
-export const mySkills = [
+export const myFrontendSkills = [
   {
-    title: "Frontend",
-    skills: [
-      {
-        title: "Html",
-        href: html,
-      },
-      {
-        title: "Css",
-        href: css,
-      },
-      {
-        title: "JavaScript",
-        href: javascript,
-      },
-      {
-        title: "TypeScript",
-        href: typescript,
-      },
-      {
-        title: "React",
-        href: react,
-      },
-      {
-        title: "Next",
-        href: next,
-      },
-      {
-        title: "Bootstrap",
-        href: bootstrap,
-      },
-      {
-        title: "Tailwind",
-        href: tailwind,
-      },
-      {
-        title: "Chakra",
-        href: chakra,
-      },
-      {
-        title: "MUI",
-        href: mui,
-      },
-      {
-        title: "Sass",
-        href: sass,
-      },
-      {
-        title: "Shadcn",
-        href: shadcn,
-      },
-    ],
+    title: "Html",
+    href: html,
   },
   {
-    title: "Backend",
-    skills: [
-      {
-        title: "Node",
-        href: node,
-      },
-      {
-        title: "Nest",
-        href: nest,
-      },
-      {
-        title: "Express",
-        href: express,
-      },
-      {
-        title: "Ejs",
-        href: ejs,
-      },
-      {
-        title: "Socket IO",
-        href: socket,
-      },
-      {
-        title: "Docker",
-        href: docker,
-      },
-      {
-        title: "Min IO",
-        href: minio,
-      },
-      {
-        title: "Graphql",
-        href: graphql,
-      },
-      {
-        title: "TypeScript",
-        href: typescript,
-      },
-      {
-        title: "Swagger",
-        href: swagger,
-      },
-      {
-        title: "Postman",
-        href: postman,
-      },
-      {
-        title: "JWT",
-        href: jwt,
-      },
-    ],
+    title: "Css",
+    href: css,
   },
   {
-    title: "Database",
-    skills: [
-      {
-        title: "Postgresql",
-        href: postgres,
-      },
-      {
-        title: "Mongo DB",
-        href: mongodb,
-      },
-      {
-        title: "Redis",
-        href: redis,
-      },
-      {
-        title: "Msql",
-        href: mysql,
-      },
-    ],
+    title: "JavaScript",
+    href: javascript,
+  },
+  {
+    title: "TypeScript",
+    href: typescript,
+  },
+  {
+    title: "React",
+    href: react,
+  },
+  {
+    title: "Next",
+    href: next,
+  },
+  {
+    title: "Bootstrap",
+    href: bootstrap,
+  },
+  {
+    title: "Tailwind",
+    href: tailwind,
+  },
+  {
+    title: "Chakra",
+    href: chakra,
+  },
+  {
+    title: "MUI",
+    href: mui,
+  },
+  {
+    title: "Sass",
+    href: sass,
+  },
+  {
+    title: "Shadcn",
+    href: shadcn,
+  },
+];
+
+export const myBackendSkills = [
+  {
+    title: "Node",
+    href: node,
+  },
+  {
+    title: "Nest",
+    href: nest,
+  },
+  {
+    title: "Express",
+    href: express,
+  },
+  {
+    title: "Ejs",
+    href: ejs,
+  },
+  {
+    title: "Socket IO",
+    href: socket,
+  },
+  {
+    title: "Docker",
+    href: docker,
+  },
+  {
+    title: "Min IO",
+    href: minio,
+  },
+  {
+    title: "Graphql",
+    href: graphql,
+  },
+  {
+    title: "TypeScript",
+    href: typescript,
+  },
+  {
+    title: "Swagger",
+    href: swagger,
+  },
+  {
+    title: "Postman",
+    href: postman,
+  },
+  {
+    title: "JWT",
+    href: jwt,
+  },
+];
+
+export const myDatabaseSkills = [
+  {
+    title: "Postgresql",
+    href: postgres,
+  },
+  {
+    title: "Mongo DB",
+    href: mongodb,
+  },
+  {
+    title: "Redis",
+    href: redis,
+  },
+  {
+    title: "Msql",
+    href: mysql,
   },
 ];
 

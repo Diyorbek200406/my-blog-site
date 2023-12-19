@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { blogs } from "@/lib/blogs";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -11,13 +12,13 @@ const Blogs = () => {
         <h1 className="text-5xl font-bold">Blogs</h1>
       </motion.div>
 
-      <ul className="flex flex-col items-center justify-center gap-4">
+      <ul className="flex flex-col items-center justify-center gap-4 group/blog">
         {blogs.map((blog, idx) => (
-          <motion.li initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 500 }} transition={{ duration: 1, delay: 0.4 * (idx + 1), ease: "easeInOut" }} key={idx} className="p-4 mt-1 w-full bg-slate-400 rounded-md">
+          <motion.li initial={{ opacity: 0, x: "-100%" }} animate={{ opacity: 1, x: "0%" }} exit={{ opacity: 0, x: "100%" }} transition={{ duration: 1, delay: 0.4 * (idx + 1), ease: "easeInOut" }} key={idx} className="p-4 mt-1 w-full rounded-md dark:bg-gray-800 bg-gray-300 transition-opacity duration-500 group-hover/blog:!opacity-50 group-hover/blog:hover:!opacity-100">
             <Link href={`blogs/${blog.route}`} className="flex items-center justify-between">
-              <div className="w-[20%]">
-                <p className="text-lg font-semibold">{blog.date}</p>
-              </div>
+              <Button className="text-lg font-semibold" variant={"outline"}>
+                {blog.date}
+              </Button>
 
               <div className="w-[80%]">
                 <h3 className="text-2xl font-bold">{blog.title}</h3>
